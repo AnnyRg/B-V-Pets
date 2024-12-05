@@ -29,3 +29,4 @@ function toggleServicio(tipoServicio) {
         servicioGatos.style.display = 'block';
     }
 }
+
