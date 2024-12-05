@@ -1,0 +1,53 @@
+<section id="productos">
+    <h2>Productos</h2>
+    <div class="categorias-productos">
+        <div class="categoria">
+            <a href="#alimentos" class="categoria-enlace" onclick="toggleSubcategoria('alimentos')">
+                <img src="Alimentos.png" alt="Alimentos">
+                <h3>Alimentos</h3>
+            </a>
+        </div>
+
+        <!-- Alimentos -->
+        <div id="alimentos" class="subcategorias">
+            <div class="subcategorias-alimentos">
+                <div class="subcategoria">
+                    <a href="#productos-perros" onclick="toggleSubcategoria('perros')">
+                        <img src="Perros.png" alt="Perros">
+                        <h4>Perros</h4>
+                    </a>
+                </div>
+                <div class="subcategoria">
+                    <a href="#productos-gatos" onclick="toggleSubcategoria('gatos')">
+                        <img src="Gatos.png" alt="Gatos">
+                        <h4>Gatos</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Productos para Perros -->
+        <div id="productos-perros" class="productos" style="display: none;">
+            <h3>Productos para Perros</h3>
+            <div class="productos-lista">
+                <div class="producto">
+                    <img src="AlimentoC1.jfif" alt="Alimento 1">
+                    <p>Hills para perro Adulto OB 33 Lb: $507.600</p>
+                </div>
+                <!-- Otros productos -->
+            </div>
+        </div>
+
+        <!-- Productos para Gatos -->
+        <div id="productos-gatos" class="productos" style="display: none;">
+            <h3>Productos para Gatos</h3>
+            <div class="productos-lista">
+                <div class="producto">
+                    <img src="Algatos1.jpg" alt="1">
+                    <p>Max Cat gatos adultos pollo y arroz 10.1 Kg Precio: $199.800</p>
+                </div>
+                <!-- Otros productos -->
+            </div>
+        </div>
+    </div>
+</section>
