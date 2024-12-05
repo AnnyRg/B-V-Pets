@@ -46,9 +46,8 @@ h1 {
 }
 
 /* Secciones */
-h5 {
+h2, h3, h4, h5 {
     color: #11bee9;
-    font-size: 3em;
 }
 
 .caja-texto {
@@ -118,14 +117,14 @@ section {
 
 /* Img Alimentos, Ropa y Baño */
 .categoria img {
-    width: 350px;
-    height: 350px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: #1aa9d6;
     padding: 10px;
 }
 
-/* ALIMIENTOS */
+/* ALIMENTOS */
 .categoria h3 {
     color: #1aa9d6;
     font-size: 1.5em;
@@ -211,10 +210,6 @@ footer {
     background-color: #1aa9d6;
     color: white;
     padding: 20px 0;
-}
-
-.justificado {
-    text-align: justify;
 }
 
 /* Estilos del formulario */
