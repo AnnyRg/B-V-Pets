@@ -8,9 +8,9 @@ function toggleSubcategoria(categoria) {
 
     // Muestra
     if (categoria === 'perros') {
-        productosPerros.style.display = 'flex';
+        productosPerros.style.display = 'block';
     } else if (categoria === 'gatos') {
-        productosGatos.style.display = 'flex';
+        productosGatos.style.display = 'block';
     }
 }
 
