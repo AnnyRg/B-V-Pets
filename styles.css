@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Six+Hands+Marker&display=swap');
 
 body {
-    font-family: 'Six Hands Marker', cursive;
+    font-family: 'Six Hands Marker';
     background-color: #ffffff;
     color: #1aa9d6;
     margin: 0;
@@ -163,24 +163,24 @@ section {
 /* Lista de productos */
 .productos-lista {
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     max-width: 100%;
     overflow: hidden;
 }
+
 
 /* Cada producto */
 .producto {
     margin: 10px;
     border: 1px solid #1aa9d6;
     padding: 10px;
-    width: 200px;
+    width: calc(33.333% - 40px); /* Ajusta el ancho para que quepan 3 productos por fila */
+    box-sizing: border-box;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-    flex-basis: 200px;
-    flex-grow: 1;
 }
 
 .producto:hover {
@@ -191,6 +191,7 @@ section {
     width: 100%;
     height: auto;
 }
+
 
 /* Mostrar productos */
 #productos-perros,
@@ -291,6 +292,19 @@ input[type="submit"]:hover {
         max-width: 300px; /* Ancho máximo */
     }
 
+    /* Estilos Responsivos */
+@media (max-width: 1200px) {
+    .producto {
+        width: calc(50% - 40px); /* Ajusta el ancho para que quepan 2 productos por fila */
+    }
+}
+
+@media (max-width: 768px) {
+    .producto {
+        width: calc(100% - 40px); /* Ajusta el ancho para que quepa 1 producto por fila */
+    }
+}
+
     /* Formularios */
     form {
         width: 90%; /* Hacer que el formulario sea más pequeño en móviles */
@@ -301,23 +315,22 @@ input[type="submit"]:hover {
     }
 }
 
-/* Estilos del botón para regresar al inicio */
+/* Estilo para el botón "Regresar al Inicio" */
 .btn-regresar {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: #1aa9d6;
     color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    padding: 10px 15px;
-    font-size: 16px;
+    font-family: 'Six Hands Marker', sans-serif;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Para asegurarse de que el botón esté siempre visible */
-    transition: background-color 0.3s; /* Transición suave */
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-regresar:hover {
-    background-color: #11bee9; /* Cambio de color al pasar el mouse */
+    background-color: #1697c1;
 }
