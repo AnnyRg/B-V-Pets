@@ -8,37 +8,20 @@ function toggleSubcategoria(categoria) {
 
     // Muestra
     if (categoria === 'productos-perros') {
-        productosPerros.style.display = 'block';
+        productosPerros.style.display = 'flex';
     } else if (categoria === 'productos-gatos') {
-        productosGatos.style.display = 'block';
+        productosGatos.style.display = 'flex';
     }
 }
 
-function toggleServicio(tipoServicio) {
-    const servicioPerros = document.getElementById('servicio-perros');
-    const servicioGatos = document.getElementById('servicio-gatos');
-
-    // Oculta ambos
-    servicioPerros.style.display = 'none';
-    servicioGatos.style.display = 'none';
-
-    // Muestra el servicio correspondiente
-    if (tipoServicio === 'perros') {
-        servicioPerros.style.display = 'block';
-    } else if (tipoServicio === 'gatos') {
-        servicioGatos.style.display = 'block';
-    }
-}
-
-// Función para añadir productos al carrito
-function addToCart(productName, price) {
+function addToCart(productName, price, memberPrice) {
     const cartList = document.getElementById('carro-lista');
     const cartTotal = document.getElementById('carro-total');
 
     // Crear elemento de producto en el carrito
     const cartItem = document.createElement('div');
     cartItem.classList.add('cart-item');
-    cartItem.innerHTML = `<p>${productName} - $${price.toFixed(2)}</p>`;
+    cartItem.innerHTML = `<p>${productName} - $${price.toFixed(2)} ($${memberPrice.toFixed(2)} LAIKA Member)</p>`;
 
     // Añadir el producto al carrito
     cartList.appendChild(cartItem);
