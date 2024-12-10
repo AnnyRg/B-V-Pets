@@ -1,37 +1,52 @@
-<section id="servicios">
-    <h2>Servicios</h2>
-    <div class="subcategorias-servicios">
-        <div class="subcategoria">
-            <a href="#servicio-perros" onclick="toggleServicio('perros')">
-                <img src="Perros.png" alt="Perros" class="servicio-imagen">
-                <h4>Servicios para Perros</h4>
-            </a>
-        </div>
-        <div class="subcategoria">
-            <a href="#servicio-gatos" onclick="toggleServicio('gatos')">
-                <img src="Gatos.png" alt="Gatos" class="servicio-imagen">
-                <h4>Servicios para Gatos</h4>
-            </a>
-        </div>
-    </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - B&V Pets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Six+Hands+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Servicios</h1>
+    </header>
 
-    <!-- Servicios para Perros -->
-    <div id="servicio-perros" class="productos" style="display: none;">
-        <h5>Baño y Corte</h5>
-        <p>Baño y corte de perros razas pequeñas : $25.000</p>
-        <p>Baño y corte de perros razas medianas : $45.000</p>
-        <p>Baño y corte de perros razas grandes : $75.000</p>
-        <h5>Vacunación</h5>
-        <p>Vacunacion en clínica. Precio: $25.000</p>
-        <p>Vacunacion a domicilio. Precio: $45.000</p>
-    </div>
+    <section id="servicios" class="section">
+        <h2>Servicios</h2>
+        <div class="subcategorias">
+            <div class="categoria" id="perros-servicios">
+                <h3>Perros</h3>
+                <div class="opciones">
+                    <div class="opcion">
+                        <h4>Razas pequeñas</h4>
+                        <p>Tamaño: hasta 10 kg</p>
+                        <p>Precio: $30.000</p>
+                    </div>
+                    <div class="opcion">
+                        <h4>Razas medianas</h4>
+                        <p>Tamaño: de 11 a 25 kg</p>
+                        <p>Precio: $50.000</p>
+                    </div>
+                    <div class="opcion">
+                        <h4>Razas grandes</h4>
+                        <p>Tamaño: más de 25 kg</p>
+                        <p>Precio: $70.000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="categoria" id="gatos-servicios">
+                <h3>Gatos</h3>
+                <div class="opcion">
+                    <p>Servicios generales</p>
+                    <p>Precio: $40.000</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Servicios para Gatos -->
-    <div id="servicio-gatos" class="productos" style="display: none;">
-        <h5>Baño</h5>
-        <p>Bañado y Secado en Gatos. Precio: $35.000</p>
-        <h5>Vacunación</h5>
-        <p>Vacunacion en clínica. Precio: $25.000</p>
-        <p>Vacunacion a domicilio. Precio: $45.000</p>
-    </div>
-</section>
+    <footer>
+        <p>&copy; 2024 Angie Ramírez para B&V Pets. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

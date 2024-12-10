@@ -1,53 +1,66 @@
-<section id="productos">
-    <h2>Productos</h2>
-    <div class="categorias-productos">
-        <div class="categoria">
-            <a href="#alimentos" class="categoria-enlace" onclick="toggleSubcategoria('alimentos')">
-                <img src="Alimentos.png" alt="Alimentos">
-                <h3>Alimentos</h3>
-            </a>
-        </div>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - B&V Pets</title>
+    <link href="https://fonts.googleapis.com/css2?family=Six+Hands+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Productos</h1>
+    </header>
 
-        <!-- Alimentos -->
-        <div id="alimentos" class="subcategorias">
-            <div class="subcategorias-alimentos">
-                <div class="subcategoria">
-                    <a href="#productos-perros" onclick="toggleSubcategoria('perros')">
-                        <img src="Perros.png" alt="Perros">
-                        <h4>Perros</h4>
-                    </a>
-                </div>
-                <div class="subcategoria">
-                    <a href="#productos-gatos" onclick="toggleSubcategoria('gatos')">
-                        <img src="Gatos.png" alt="Gatos">
-                        <h4>Gatos</h4>
-                    </a>
-                </div>
+    <section id="productos">
+        <h2>Categorías</h2>
+        <div class="categorias-productos">
+            <div class="categoria">
+                <a href="#productos-perros" onclick="toggleSubcategoria('productos-perros')">
+                    <img src="Perros.png" alt="Perros">
+                    <h3>Perros</h3>
+                </a>
+            </div>
+            <div class="categoria">
+                <a href="#productos-gatos" onclick="toggleSubcategoria('productos-gatos')">
+                    <img src="Gatos.png" alt="Gatos">
+                    <h3>Gatos</h3>
+                </a>
             </div>
         </div>
 
-        <!-- Productos para Perros -->
-        <div id="productos-perros" class="productos" style="display: none;">
+        <div id="productos-perros" class="productos-lista" style="display: none;">
             <h3>Productos para Perros</h3>
-            <div class="productos-lista">
+            <div class="productos-grid">
+                <!-- Lista de productos -->
                 <div class="producto">
-                    <img src="AlimentoC1.jfif" alt="Alimento 1">
-                    <p>Hills para perro Adulto OB 33 Lb: $507.600</p>
+                    <img src="producto1.png" alt="Producto 1">
+                    <h4>Producto 1</h4>
+                    <p>Descripción del producto 1</p>
+                    <button onclick="addToCart('Producto 1', 10.00)">Añadir al carrito</button>
                 </div>
-                <!-- Otros productos -->
+                <!-- Agrega más productos aquí -->
             </div>
         </div>
 
-        <!-- Productos para Gatos -->
-        <div id="productos-gatos" class="productos" style="display: none;">
+        <div id="productos-gatos" class="productos-lista" style="display: none;">
             <h3>Productos para Gatos</h3>
-            <div class="productos-lista">
+            <div class="productos-grid">
+                <!-- Lista de productos -->
                 <div class="producto">
-                    <img src="Algatos1.jpg" alt="1">
-                    <p>Max Cat gatos adultos pollo y arroz 10.1 Kg Precio: $199.800</p>
+                    <img src="producto2.png" alt="Producto 2">
+                    <h4>Producto 2</h4>
+                    <p>Descripción del producto 2</p>
+                    <button onclick="addToCart('Producto 2', 15.00)">Añadir al carrito</button>
                 </div>
-                <!-- Otros productos -->
+                <!-- Agrega más productos aquí -->
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Angie Ramírez para B&V Pets. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

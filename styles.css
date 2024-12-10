@@ -1,8 +1,7 @@
-/* Importar la fuente */
 @import url('https://fonts.googleapis.com/css2?family=Six+Hands+Marker&display=swap');
 
 body {
-    font-family: 'Six Hands Marker', cursive;
+    font-family: 'Six Hands Marker';
     background-color: #ffffff;
     color: #1aa9d6;
     margin: 0;
@@ -46,9 +45,8 @@ h1 {
 }
 
 /* Secciones */
-h5 {
+h2, h3, h4, h5 {
     color: #11bee9;
-    font-size: 3em;
 }
 
 .caja-texto {
@@ -118,14 +116,14 @@ section {
 
 /* Img Alimentos, Ropa y Baño */
 .categoria img {
-    width: 350px;
-    height: 350px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     background-color: #1aa9d6;
     padding: 10px;
 }
 
-/* ALIMIENTOS */
+/* ALIMENTOS */
 .categoria h3 {
     color: #1aa9d6;
     font-size: 1.5em;
@@ -211,10 +209,6 @@ footer {
     background-color: #1aa9d6;
     color: white;
     padding: 20px 0;
-}
-
-.justificado {
-    text-align: justify;
 }
 
 /* Estilos del formulario */
@@ -307,23 +301,22 @@ input[type="submit"]:hover {
     }
 }
 
-/* Estilos del botón para regresar al inicio */
+/* Estilo para el botón "Regresar al Inicio" */
 .btn-regresar {
     position: fixed;
     bottom: 20px;
     right: 20px;
     background-color: #1aa9d6;
     color: white;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    padding: 10px 15px;
-    font-size: 16px;
+    font-family: 'Six Hands Marker', sans-serif;
     cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-    z-index: 1000; /* Para asegurarse de que el botón esté siempre visible */
-    transition: background-color 0.3s; /* Transición suave */
+    font-size: 16px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-regresar:hover {
-    background-color: #11bee9; /* Cambio de color al pasar el mouse */
+    background-color: #1697c1;
 }
