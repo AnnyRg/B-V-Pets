@@ -382,7 +382,7 @@ button[type="submit"]:hover {
 /* Estilos Responsivos */
 @media (max-width: 1200px) {
     nav ul {
-        flex-direction: column; /* Cambiar a columna para mejor visualización */
+        flex-direction: flex; /* Cambiar a columna para mejor visualización */
         align-items: stretch; /* Centrar los elementos */
         padding: 0; /* Eliminar padding */
     }
