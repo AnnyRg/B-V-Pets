@@ -67,19 +67,17 @@ h2, h3, h4, h5 {
 /* Navegación */
 nav ul {
     list-style-type: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    justify-items: center;
     width: 100%;
     margin: 0;
     padding: 0;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en la siguiente línea */
 }
 
 nav ul li {
     box-sizing: border-box; /* Ajusta el tamaño para incluir el borde */
-    margin: 10px; /* Aumenta el espaciado entre los botones del menú */
-    flex: 1 1 45%; /* Ajusta el ancho para que quepan 2 elementos por fila */
     text-align: center; /* Centra el texto */
 }
 
@@ -387,15 +385,13 @@ button[type="submit"]:hover {
 /* Estilos Responsivos */
 @media (max-width: 1200px) {
     nav ul {
-        flex-direction: row; /* Mantener en fila pero ajustar el espaciado */
-        flex-wrap: wrap; /* Permitir que los elementos se envuelvan en la siguiente línea */
-        justify-content: center; /* Centrar los elementos */
-        padding: 0; /* Eliminar padding */
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 10px;
+        justify-items: center;
     }
 
     nav ul li {
         margin: 10px; /* Ajustar el margen entre los elementos de la navegación */
-        flex: 1 1 45%; /* Ajustar el ancho para que quepan 2 elementos por fila */
     }
 
     nav ul li a {
