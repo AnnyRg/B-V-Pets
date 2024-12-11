@@ -14,7 +14,7 @@ body {
 /* Estilos del encabezado */
 header {
     display: flex;
-    flex-direction: column;
+    flex-direction: Flex;
     align-items: center;
     background-color: #ffffff;
     padding: 20px;
