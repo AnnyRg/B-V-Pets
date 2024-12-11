@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Six+Hands+Marker&display=swap');
 
 body {
-    font-family: 'Six Hands Marker';
+    font-family: 'Six Hands Marker', sans-serif;
     background-color: #ffffff;
     color: #1aa9d6;
     margin: 0;
@@ -18,10 +18,11 @@ header {
     align-items: center;
     background-color: #ffffff;
     padding: 20px;
+    border-bottom: 2px solid #1aa9d6;
 }
 
 .logo img {
-    width: 50px;
+    width: 100px; /* Ajusta el tamaño del logo */
     height: auto;
     margin-bottom: 10px;
 }
@@ -173,11 +174,11 @@ section {
 
 /* Cada producto */
 .producto {
-    margin: 10px;
-    border: 1px solid #1aa9d6;
-    padding: 10px;
-    width: 250px; /* Ancho fijo para cada producto */
+    flex: 1 1 30%; /* Ajusta el ancho de los productos */
     box-sizing: border-box;
+    margin: 1%;
+    padding: 10px;
+    border: 1px solid #1aa9d6;
     text-align: center;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
@@ -188,7 +189,7 @@ section {
 }
 
 .producto img {
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -238,13 +239,9 @@ footer {
 }
 
 /* Estilos del formulario */
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    max-width: 500px;
-    margin: 20px auto;
+.formulario-contacto {
+    max-width: 600px;
+    margin: 50px auto;
     padding: 20px;
     border: 2px solid #1aa9d6;
     border-radius: 10px;
@@ -252,21 +249,31 @@ form {
     background-color: #f9f9f9;
 }
 
+.formulario-contacto h2 {
+    text-align: center;
+    color: #1aa9d6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 form label {
-    display: block;
-    margin-bottom: 10px;
     font-size: 16px;
     color: #333;
 }
 
-input[type="text"], input[type="email"] {
-    width: 300px;
+input[type="text"], input[type="email"], input[type="tel"] {
     padding: 10px;
     border: 1px solid #1aa9d6;
     border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-input[type="submit"] {
+button[type="submit"] {
     background-color: #1aa9d6;
     color: white;
     border: none;
@@ -276,7 +283,7 @@ input[type="submit"] {
     transition: background-color 0.3s;
 }
 
-input[type="submit"]:hover {
+button[type="submit"]:hover {
     background-color: #11bee9;
 }
 
@@ -368,11 +375,11 @@ input[type="submit"]:hover {
     }
 
     .producto {
-        width: calc(50% - 40px); /* Ajusta el ancho para que quepan 2 productos por fila */
+        flex: 1 1 45%; /* Ajusta el ancho para que quepan 2 productos por fila */
     }
 
     .articulo {
-        width: calc(50% - 40px); /* Ajusta el ancho para que quepan 2 artículos por fila */
+        width: calc(45% - 40px); /* Ajusta el ancho para que quepan 2 artículos por fila */
     }
 
     /* Formularios */
@@ -380,18 +387,18 @@ input[type="submit"]:hover {
         width: 90%; /* Hacer que el formulario sea más pequeño en móviles */
     }
 
-    input[type="text"], input[type="email"] {
+    input[type="text"], input[type="email"], input[type="tel"] {
         width: 100%; /* Ajustar al 100% del contenedor */
     }
 }
 
 @media (max-width: 768px) {
     .producto {
-        width: calc(100% - 40px); /* Ajusta el ancho para que quepa 1 producto por fila */
+        flex: 1 1 90%; /* Ajusta el ancho para que quepa 1 producto por fila */
     }
 
     .articulo {
-        width: calc(100% - 40px); /* Ajusta el ancho para que quepa 1 artículo por fila */
+        width: calc(90% - 40px); /* Ajusta el ancho para que quepa 1 artículo por fila */
     }
 }
 
