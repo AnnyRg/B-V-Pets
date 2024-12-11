@@ -16,30 +16,46 @@
         <h2>Servicios</h2>
         <div class="subcategorias">
             <div class="categoria" id="perros-servicios">
-                <h3>Perros</h3>
-                <div class="opciones">
+                <a href="#" onclick="toggleSubcategoria('servicios-perros')">
+                    <img src="Perros.png" alt="Perros">
+                    <h3>Perros</h3>
+                </a>
+                <div id="servicios-perros" class="opciones" style="display: none;">
                     <div class="opcion">
-                        <h4>Razas pequeñas</h4>
+                        <h4>Baño y Secado Razas pequeñas</h4>
                         <p>Tamaño: hasta 10 kg</p>
                         <p>Precio: $30.000</p>
                     </div>
                     <div class="opcion">
-                        <h4>Razas medianas</h4>
+                        <h4>Baño y Secado Razas medianas</h4>
                         <p>Tamaño: de 11 a 25 kg</p>
                         <p>Precio: $50.000</p>
                     </div>
                     <div class="opcion">
-                        <h4>Razas grandes</h4>
+                        <h4>Baño y Secado Razas grandes</h4>
                         <p>Tamaño: más de 25 kg</p>
                         <p>Precio: $70.000</p>
+                    </div>
+                    <div class="opcion">
+                        <h4>Vacunacion cualquier tamaño</h4>
+                        <p>Precio: $30.000</p>
                     </div>
                 </div>
             </div>
             <div class="categoria" id="gatos-servicios">
-                <h3>Gatos</h3>
-                <div class="opcion">
-                    <p>Servicios generales</p>
-                    <p>Precio: $40.000</p>
+                <a href="#" onclick="toggleSubcategoria('servicios-gatos')">
+                    <img src="Gatos.png" alt="Gatos">
+                    <h3>Gatos</h3>
+                </a>
+                <div id="servicios-gatos" class="opciones" style="display: none;">
+                    <div class="opcion">
+                        <p>Baño y Secado</p>
+                        <p>Precio: $40.000</p>
+                    </div>
+                    <div class="opcion">
+                        <h4>Vacunacion </h4>
+                        <p>Precio: $25.000</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -49,5 +65,6 @@
     <footer>
         <p>&copy; 2024 Angie Ramírez para B&V Pets. Todos los derechos reservados.</p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>

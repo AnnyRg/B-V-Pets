@@ -1,16 +1,16 @@
 function toggleSubcategoria(categoria) {
-    const productosPerros = document.getElementById('productos-perros');
-    const productosGatos = document.getElementById('productos-gatos');
+    const serviciosPerros = document.getElementById('servicios-perros');
+    const serviciosGatos = document.getElementById('servicios-gatos');
 
     // Oculta ambos
-    productosPerros.style.display = 'none';
-    productosGatos.style.display = 'none';
+    serviciosPerros.style.display = 'none';
+    serviciosGatos.style.display = 'none';
 
-    // Muestra
-    if (categoria === 'productos-perros') {
-        productosPerros.style.display = 'flex';
-    } else if (categoria === 'productos-gatos') {
-        productosGatos.style.display = 'flex';
+    // Muestra la categoría seleccionada
+    if (categoria === 'servicios-perros') {
+        serviciosPerros.style.display = 'flex';
+    } else if (categoria === 'servicios-gatos') {
+        serviciosGatos.style.display = 'flex';
     }
 }
 
